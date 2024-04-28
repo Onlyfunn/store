@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="success">Контактные данные записаны</div>
+			<header class="header">
+				<div class="header__container">
+					<a href="#" class="header__logo logo">
+						<img src="img/logo.svg" alt="logo" />
+					</a>
+					<nav class="header__menu menu">
+						<ul class="menu__items">
+							<li class="menu__item">
+								<a href="#about-us" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="#solutions" class="menu__link">Наши решения</a>
+							</li>
+							<li class="menu__item">
+								<a href="#products" class="menu__link">Продукты</a>
+							</li>
+							<li class="menu__item">
+								<a href="#contact" class="menu__link">Как это работает</a>
+							</li>
+							<li class="menu__item">
+								<a href="tel:88008999999" class="phone">8 800 899 99 99</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__phone">
+						<a href="tel:88008999999" class="phone">8 800 899 99 99</a>
+					</div>
+					<button class="burger">
+						<span></span><span></span><span></span>
+					</button>
+				</div>
+				<img src="img/line.svg" alt="" class="header__line" />
+			</header>
+			<div class="modal">
+				<div class="modal__body">
+					<button class="modal__close">
+						<img src="img/close.svg" alt="close" />
+					</button>
+					<img
+						src="img/image-popup.svg"
+						alt="image-popup"
+						class="modal__image"
+					/>
+					<form action="#" class="modal__form form">
+						<h2 class="form__title">Получить консультацию</h2>
+						<input type="text" class="form__input" placeholder="Ваше имя" />
+						<input
+							type="text"
+							class="form__input form-phone"
+							placeholder="Ваш телефон"
+						/>
+						<p class="form__text">
+							Нажимая “Отправить” вы подтверждаете свое согласие на обработку и
+							хранение ваших персональных данных в соответствии с
+							<a href="#">политикой обработки персональных данных.</a>
+						</p>
+						<button class="form__submit" type="submit" id="submit">
+							Отправить запрос
+						</button>
+					</form>
+				</div>
+			</div>
+			<main class="main">
+				<section class="info">
+					<div class="info__container">
+						<div class="info__box-1">
+							<p class="info__text-use">Воспользуйтесь</p>
+							<h1 class="info__title">Self-Storage</h1>
+							<p class="info__text">
+								Удобное и надежное решение для хранения ваших личных вещей,
+								обеспечивая просторное пространство и гибкую аренду.
+							</p>
+							<div class="info__buttons">
+								<a href="#" class="info__button button --white">Консультация</a
+								><a href="#" class="info__button button">Демо-версия</a>
+							</div>
+							<div class="info__arrow">
+								<img src="img/arrow-white.svg" alt="arrow" />
+							</div>
+						</div>
+						<div class="info__box-2">
+							<div class="info__more more-info">
+								<p class="more-info__text">Забронировать -</p>
+								<a href="" class="more-info__link">
+									<p class="more-info__link-title">легко и просто!</p>
+									<p class="more-info__link-text">
+										Узнайте больше о том,<br />
+										как это сделать
+									</p>
+								</a>
+							</div>
+							<div class="info__more more-info">
+								<p class="more-info__text">Узнайте больше</p>
+								<a href="" class="more-info__link">
+									<p class="more-info__link-title">о нашей продукции</p>
+									<p class="more-info__link-text">
+										Узнайте больше о том,<br />
+										о нашей продукции
+									</p>
+								</a>
+							</div>
+							<picture class="info__image">
+								<source
+									srcset="img/image-info-2.png"
+									media="
+							(max-width: 1261px)"
+								/>
+								<img src="img/image-info.png" alt="" />
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section class="about-us" id="about-us">
+					<div class="about-us__container">
+						<img src="img/image-about-us.svg" alt="" class="about-us__image" />
+						<div class="about-us__inner">
+							<h1 class="about-us__title title">О нас</h1>
+							<p class="about-us__text">
+								Контейнеры хранения Self Storage предоставляют удобное и
+								безопасное решение для хранения различных вещей, от мебели до
+								сезонных предметов. Современные системы безопасности и гибкие
+								условия аренды делают эти контейнеры идеальным выбором для
+								организации пространства и сохранения ценных вещей.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="problems">
+					<div class="problems__container">
+						<h1 class="problems__title title">Проблемы, которые мы решаем</h1>
+						<div class="problems__items">
+							<div class="problems__item item-problems">
+								<h3 class="item-problems__title">Проблема</h3>
+								<p class="item-problems__text">
+									Способ решения проблемы. Способ решения проблемы.
+								</p>
+							</div>
+							<div class="problems__item item-problems">
+								<h3 class="item-problems__title">Проблема</h3>
+								<p class="item-problems__text">
+									Способ решения проблемы. Способ решения проблемы.
+								</p>
+							</div>
+							<div class="problems__item item-problems">
+								<h3 class="item-problems__title">Проблема</h3>
+								<p class="item-problems__text">
+									Способ решения проблемы. Способ решения проблемы.
+								</p>
+							</div>
+							<div class="problems__item item-problems">
+								<h3 class="item-problems__title">Проблема</h3>
+								<p class="item-problems__text">
+									Способ решения проблемы. Способ решения проблемы.
+								</p>
+							</div>
+							<div class="problems__item item-problems">
+								<h3 class="item-problems__title">Проблема</h3>
+								<p class="item-problems__text">
+									Способ решения проблемы. Способ решения проблемы.
+								</p>
+							</div>
+							<div class="problems__item item-problems">
+								<h3 class="item-problems__title">Проблема</h3>
+								<p class="item-problems__text">
+									Способ решения проблемы. Способ решения проблемы.
+								</p>
+							</div>
+							<div class="problems__item item-problems">
+								<h3 class="item-problems__title">Проблема</h3>
+								<p class="item-problems__text">
+									Способ решения проблемы. Способ решения проблемы.
+								</p>
+							</div>
+							<div class="problems__item item-problems">
+								<h3 class="item-problems__title">Проблема</h3>
+								<p class="item-problems__text">
+									Способ решения проблемы. Способ решения проблемы.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="solutions" id="solutions">
+					<div class="solutions__container">
+						<h1 class="solutions__title title">Наши решения</h1>
+						<div class="solutions__items">
+							<div class="solutions__item item-solutions">
+								<div class="item-solutions__numbers">
+									<div class="item-solutions__number number --selected">1</div>
+									<div class="item-solutions__number number">2</div>
+									<div class="item-solutions__number number">3</div>
+								</div>
+								<div class="item-solutions__text">
+									Клиент <span>бронирует</span> ячейку в телефоне
+								</div>
+							</div>
+							<div class="solutions__item item-solutions">
+								<div class="item-solutions__numbers">
+									<div class="item-solutions__number number">1</div>
+									<div class="item-solutions__number number --selected">2</div>
+									<div class="item-solutions__number number">3</div>
+								</div>
+								<div class="item-solutions__text">
+									Сразу производит <span>оплату</span>
+								</div>
+							</div>
+							<div class="solutions__item item-solutions">
+								<div class="item-solutions__numbers">
+									<div class="item-solutions__number number">1</div>
+									<div class="item-solutions__number number">2</div>
+									<div class="item-solutions__number number --selected">3</div>
+								</div>
+								<div class="item-solutions__text">
+									Электронные замки позволяют клиенту открывать ячейку 24/7
+									напрямую при помощи телефона, для пользователей, плохо
+									владеющих телефоном предусмотрена кодовая PRDIF панель
+								</div>
+							</div>
+						</div>
+						<a href="#" class="solutions__button button">Демо-версия</a>
+					</div>
+				</section>
+				<section class="products" id="products">
+					<div class="products__container">
+						<h1 class="products__title title">Наши продукты</h1>
+						<div class="products__items">
+							<div class="products__item">
+								<p class="products__text">Полная</p>
+								<p class="products__name">Автоматизация склада</p>
+								<p class="products__text">
+									Контейнеры оборудованы электронными замками и системами
+									доступа, которые позволяют клиентам управлять своими
+									контейнерами удаленно через мобильные приложения или
+									интернет-порталы.
+								</p>
+								<p class="products__price price">1659₽</p>
+								<p class="products__month month">в месяц</p>
+								<p class="products__price-years price-years">19 900 ₽/год</p>
+								<a href="" class="products__button button">Купить год</a>
+							</div>
+							<div class="products__item">
+								<p class="products__text">Система</p>
+								<p class="products__name">Онлайн бронирования</p>
+								<p class="products__text">
+									Через официальный веб-сайт или мобильное приложение,
+									пользователи могут просмотреть доступные контейнеры,
+									ознакомиться с их размерами и стоимостью, а затем выбрать
+									оптимальный вариант и забронировать его онлайн.
+								</p>
+								<p class="products__price price">1290₽</p>
+								<p class="products__month month">в месяц</p>
+								<p class="products__price-years price-years">15 480 ₽/год</p>
+								<a href="" class="products__button button">Купить год</a>
+							</div>
+						</div>
+						<div class="products__table">
+							<table class="products__pluses pluses">
+								<thead class="pluses__titles">
+									<tr>
+										<th class="pluses__title">Плюсы</th>
+										<th class="pluses__title">Цифровизация склада</th>
+										<th class="pluses__title">Автоматизация склада</th>
+									</tr>
+								</thead>
+								<tbody class="pluses__body">
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Бронирование ячеек и заключение договора на сайте
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Онлайн оплата и подписка на услуги
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Доступ на склад 24/7
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2"></th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Делегирование доступа к ячейке
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2"></th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Аналитика по клиентам
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Панель администратора
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Безопасная авторизация через СМС
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Совместимость со всем оборудованием Store
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2"></th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Обработка персональных данный в согласии с 152 ФЗ
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Калькулятор стоимости бокса на сайте
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Возможность блокировки ячейки в случае просрочки
+													оплаты
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2"></th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Интеграция с CRM системами
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Расширенная аналитика по клиентам
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2"></th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Автоматическое уведомление клиентов о необходимсоти
+													оплаты
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Автоматическа проверка паспорта
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2"></th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+									<tr>
+										<th class="pluses__pluse-1 pluse-1">
+											<div class="pluse-1__body">
+												<div class="pluse-1__text">
+													Работа с электронными замками
+													<img
+														src="img/question.svg"
+														alt=""
+														class="pluse-1__question"
+													/>
+													<div class="pluse-1__clue">
+														Удобная и безопасная возможность оплатить аренду или
+														дополнительные услуги, сокращая время и упрощая
+														процесс оплаты для максимального комфорта клиентов.
+													</div>
+												</div>
+											</div>
+										</th>
+										<th class="pluses__pluse-2">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+										<th class="pluses__pluse-3">
+											<img src="img/check-mark.svg" alt="" />
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<button href="" class="products__table-more">Показать еще</button>
+					</div>
+				</section>
+				<section class="production">
+					<div class="production__container">
+						<h1 class="production__title title">Наша продукция</h1>
+						<p class="production__text undertitle">
+							Современные системы безопасности и гибкие условия аренды делают
+							эти контейнеры идеальным выбором для организации пространства и
+							сохранения ценных вещей. Узнайте о них больше.
+						</p>
+						<ul class="production__items">
+							<li class="production__item item-productions">
+								<p class="item-productions__top">наша продукция</p>
+								<h3 class="item-productions__title">Наши замки</h3>
+								<div class="item-productions__locks locks">
+									<div class="locks__item">
+										<div class="locks__image">
+											<img src="img/lock-1.jpeg" alt="" />
+										</div>
+										<div class="locks__body">
+											<p class="locks__title">
+												SecureGuard<br />
+												Locks
+											</p>
+											<p class="locks__text">
+												Надежные замки для контейнеров хранения обеспечивающие
+												безопасность и защиту.
+											</p>
+											<div class="locks__numbers">
+												<p class="locks__number number --selected">1</p>
+												<p class="locks__number-text">или</p>
+												<p class="locks__number number">2</p>
+											</div>
+											<img src="img/lock-bg-1.png" alt="" class="locks__bg" />
+										</div>
+									</div>
+									<div class="locks__item">
+										<div class="locks__image">
+											<img src="img/lock-2.png" alt="" />
+										</div>
+										<div class="locks__body">
+											<p class="locks__title">FortressLock Systems</p>
+											<p class="locks__text">
+												Создают непроницаемую защиту и безопасность для вашего
+												хранилища.
+											</p>
+											<div class="locks__numbers">
+												<p class="locks__number number">1</p>
+												<p class="locks__number-text">или</p>
+												<p class="locks__number number --selected">2</p>
+											</div>
+											<img src="img/lock-bg-1.png" alt="" class="locks__bg" />
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="production__item item-productions">
+								<p class="item-productions__top">наша продукция</p>
+								<h3 class="item-productions__title">Наша система</h3>
+								<div class="item-productions__system system">
+									<div class="system__item">
+										<div class="system__item-inner">
+											<img
+												src="img/production-1.png"
+												alt=""
+												class="system__image"
+											/>
+											<div class="system__body">
+												<p class="system__title">RFID</p>
+												<p class="system__undertitle">панель</p>
+												<p class="system__text">-идентификацию клиентов</p>
+												<p class="system__text">
+													-быстрый и удобный доступ к контейнерам хранения.
+												</p>
+												<p class="system__price price">1659₽</p>
+												<p class="system__month month">в месяц</p>
+												<p class="system__price-years price-years">
+													19 900 ₽/год
+												</p>
+												<div class="system__numbers">
+													<p class="system__number number --selected">1</p>
+													<p class="system__number number">2</p>
+													<p class="system__number number">3</p>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="system__item-button button">Купить</a>
+									</div>
+									<div class="system__item">
+										<div class="system__item-inner">
+											<img
+												src="img/production-2.png"
+												alt=""
+												class="system__image"
+											/>
+											<div class="system__body">
+												<p class="system__title">Кодовая</p>
+												<p class="system__undertitle">панель</p>
+												<p class="system__text">-идентификацию клиентов</p>
+												<p class="system__text">
+													-быстрый и удобный доступ к контейнерам хранения.
+												</p>
+												<p class="system__price price">1659₽</p>
+												<p class="system__month month">в месяц</p>
+												<p class="system__price-years price-years">
+													19 900 ₽/год
+												</p>
+												<div class="system__numbers">
+													<p class="system__number number">1</p>
+													<p class="system__number number --selected">2</p>
+													<p class="system__number number">3</p>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="system__item-button button">Купить</a>
+									</div>
+									<div class="system__item">
+										<div class="system__item-inner">
+											<img
+												src="img/production-3.png"
+												alt=""
+												class="system__image"
+											/>
+											<div class="system__body">
+												<p class="system__title">Доступ</p>
+												<p class="system__undertitle">по телефону</p>
+												<p class="system__text">-идентификацию клиентов</p>
+												<p class="system__text">
+													-быстрый и удобный доступ к контейнерам хранения.
+												</p>
+												<p class="system__price price">1659₽</p>
+												<p class="system__month month">в месяц</p>
+												<p class="system__price-years price-years">
+													19 900 ₽/год
+												</p>
+												<div class="system__numbers">
+													<p class="system__number number">1</p>
+													<p class="system__number number">2</p>
+													<p class="system__number number --selected">3</p>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="system__item-button button">Купить</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="partners">
+					<div class="partners__container">
+						<div class="partners__title title">Наши партнеры</div>
+						<div class="partners__text undertitle">
+							Узнайте подробнее о парнтнерах, с которыми мы работаем.
+						</div>
+						<div class="partners__body">
+							<div class="partners__image">
+								<img src="img/google.png" alt="" />
+							</div>
+							<div class="partners__image">
+								<img src="img/sony.png" alt="" />
+							</div>
+							<div class="partners__image">
+								<img src="img/ibm.png" alt="" />
+							</div>
+							<div class="partners__image">
+								<img src="img/apple.png" alt="" />
+							</div>
+							<div class="partners__image">
+								<img src="img/microsoft.png" alt="" />
+							</div>
+							<div class="partners__image">
+								<img src="img/samsung.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="contact" id="contact">
+					<div class="contact__container">
+						<h1 class="contact__title title">Связаться с нами</h1>
+						<p class="contact__text undertitle">
+							Остались вопросы? Оставьте свои контакты, и мы свяжемся с вами
+						</p>
+						<div class="contact__body">
+							<div class="contact__image">
+								<img src="img/contact-image.svg" alt="" />
+							</div>
+							<form action="#" class="contact__form form">
+								<h2 class="form__title">Оставьте заявку</h2>
+								<input type="text" class="form__input" placeholder="Ваше имя" />
+								<input
+									type="text"
+									class="form__input form-phone"
+									placeholder="Ваш телефон"
+								/>
+								<p class="form__text">
+									Нажимая “Отправить” вы подтверждаете свое согласие на
+									обработку и хранение ваших персональных данных в соответствии
+									с
+									<a href="#">политикой обработки персональных данных.</a>
+								</p>
+								<button class="form__submit" type="submit" id="submit2">
+									Отправить запрос
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<a href="#" class="footer__logo logo">
+						<img src="img/logo.svg" alt="logo" />
+					</a>
+					<nav class="footer__menu menu">
+						<ul class="menu__items">
+							<li class="menu__item">
+								<a href="#about-us" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="#solutions" class="menu__link">Наши решения</a>
+							</li>
+							<li class="menu__item">
+								<a href="#products" class="menu__link">Продукты</a>
+							</li>
+							<li class="menu__item">
+								<a href="#contact" class="menu__link">Как это работает</a>
+							</li>
+							<li class="menu__item">
+								<a href="tel:88008999999" class="phone">8 800 899 99 99</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__phone">
+						<a href="tel:88008999999" class="phone">8 800 899 99 99</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://unpkg.com/imask"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
